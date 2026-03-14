@@ -1,0 +1,80 @@
+/* Page Container */
+
+.movie-details{
+    margin-left:220px; /* sidebar space */
+    padding:40px;
+    background:#111;
+    color:white;
+    min-height:100vh;
+}
+
+/* Movie Title */
+
+.movie-details h1{
+    font-size:36px;
+    margin-bottom:20px;
+    color:#e50914;
+}
+
+/* Movie Image */
+
+.movie-details img{
+    width:100%;
+    max-width:900px;
+    border-radius:10px;
+    display:block;
+    margin-bottom:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.7);
+}
+
+/* Movie Description */
+
+.movie-details p{
+    font-size:16px;
+    line-height:1.6;
+    margin-bottom:15px;
+    max-width:900px;
+}
+
+/* Rating highlight */
+
+.movie-details p:nth-of-type(3){
+    color:#ff3d00;
+    font-weight:600;
+}
+
+/* Trailer */
+
+.movie-details iframe{
+    margin-top:30px;
+    border-radius:10px;
+    width:100%;
+    max-width:900px;
+    height:500px;
+}
+
+/* Cast Section spacing */
+
+.movie-details .casts{
+    margin-top:40px;
+}
+
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    .movie-details{
+        margin-left:0;
+        padding:20px;
+    }
+
+    .movie-details h1{
+        font-size:28px;
+    }
+
+    .movie-details iframe{
+        height:300px;
+    }
+
+}

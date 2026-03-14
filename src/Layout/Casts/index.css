@@ -1,0 +1,70 @@
+/* Cast container */
+
+.cast-container{
+    margin-top:40px;
+
+    display:grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 per row */
+    gap:30px;
+
+    justify-items:center;
+}
+
+
+/* Cast card */
+
+.cast-card{
+    text-align:center;
+}
+
+
+/* Cast image */
+
+.cast-image{
+    width:140px;
+    height:180px;
+
+    object-fit:contain; /* shows full face */
+    background:#222;
+
+    border-radius:8px;
+    border:2px solid #444;
+
+    padding:5px;
+    transition:0.3s;
+}
+
+
+/* Hover effect */
+
+.cast-image:hover{
+    transform:scale(1.08);
+    border-color:#e50914;
+}
+
+
+/* Actor name */
+
+.cast-name{
+    margin-top:8px;
+    font-size:14px;
+    color:#ddd;
+}
+
+
+/* Tablet */
+
+@media (max-width:900px){
+    .cast-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width:600px){
+    .cast-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

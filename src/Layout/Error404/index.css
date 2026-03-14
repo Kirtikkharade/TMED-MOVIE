@@ -1,0 +1,40 @@
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+  background-color: #111;
+  color: #fff;
+  padding-top: 100px; /* account for fixed navbar */
+}
+
+.error-content {
+  text-align: center;
+}
+
+.error-content h1 {
+  font-size: 120px;
+  margin: 0;
+  color: #e50914;
+}
+
+.error-content p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.home-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #e50914;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.home-link:hover {
+  background-color: #c20812;
+}
